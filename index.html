@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="js/raphael-2.1.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+
+
+    <script type="text/javascript">
+        function init() {
+            $('#canvas').css({height: $(document).height()});
+            var view = new View("canvas");
+            view.init();
+
+        }
+    </script>
+
+    <title>PivotPaths</title>
+</head>
+
+<body onload="init()">
+    <!--display nodes-->
+    <div id = "labels"></div>
+    <!--display detail info-->
+    <div id = "detail"></div>
+
+    <!--display links-->
+    <div id = "canvas"></div>
+    <!--display checkbox-->
+    <div id = "order"></div>
+    <!--display verb -->
+    <div id = "meta">
+        <div id="meta_left"></div>
+        <div id="meta_right"></div>
+    </div>
+    <!--display number of item-->
+    <div id = "cap">
+        <div id="cap_left"></div>
+        <div id="cap_middle"></div>
+        <div id="cap_right"></div>
+    </div>
+
+    <div id="loading2"></div>
+
+    <div id="loading" class="backdrop"><div>Loading...</div></div>
+
+    <!--<div id="buttons">-->
+        <!--<div id="home">PivotPaths</div>-->
+        <!--<div id="help">Help</div>-->
+        <!--<div id="share"></div>-->
+    <!--</div>-->
+</body>
+</html>
